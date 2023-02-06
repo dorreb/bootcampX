@@ -8,5 +8,5 @@ FROM
   JOIN cohorts ON cohort_id = cohorts.id
 WHERE
   cohorts.start_date != students.start_date
-ORDER BY
+GROUP BY
   cohort_start_date;
